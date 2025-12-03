@@ -98,14 +98,14 @@
 </div>
 
 <script>
-    const API_URL = "http://127.0.0.1:8000";
-    const WS_URL = "ws://127.0.0.1:8000/ws/matchmaking";
+    //const API_URL = "http://127.0.0.1:8000";
+    //const WS_URL = "ws://127.0.0.1:8000/ws/matchmaking";
     // Update this to your ACTUAL Render URL
-    // const SERVER_URL = "https://codeclash-70rt.onrender.com"; 
+    const SERVER_URL = "https://codeclash-70rt.onrender.com"; 
     
-    // const API_URL = SERVER_URL;
+    const API_URL = SERVER_URL;
     // // Notice the 'wss' (Secure WebSocket) replacement
-    // const WS_URL = SERVER_URL.replace("https", "wss") + "/ws/matchmaking";
+    const WS_URL = SERVER_URL.replace("https", "wss") + "/ws/matchmaking";
     
     let token = null;
     let currentUser = null;
@@ -421,3 +421,5 @@ function startGame(data) {
 </script>
 </body>
 </html>
+
+
